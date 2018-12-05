@@ -1,0 +1,142 @@
+@import url(//db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital);
+
+@font-face {
+  font-family: 'DS-Digital';
+  src: url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot');
+  src: url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.svg#DS-Digital')
+      format('svg');
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1521710927254-3dd9ef96a3fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d1be01f4c82c85cf399cb66445320a9b&auto=format&fit=crop&w=2102&q=80');
+}
+
+#calculatorBody {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  height: 25em;
+  width: 60%;
+  border: 1px solid #a9a9a9;
+  border-radius: 7px;
+  padding: 5px;
+  background-color: #e2e1e7;
+  box-shadow: 5px 10px #1d140b;
+}
+
+@media (min-width: 768px) {
+  #calculatorBody {
+    width: 40%;
+    height: 30em;
+  }
+}
+
+@media (min-width: 992px) {
+  #calculatorBody {
+    width: 30%;
+    height: 30em;
+  }
+}
+
+#numOnScreen {
+  min-height: 20px;
+  font-family: 'DS-Digital';
+  padding-right: 10px;
+  padding-top: 5px;
+  font-size: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: #cbccd0;
+  text-align: right;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  max-width: 100%;
+}
+
+#display {
+  min-height: 30px;
+  max-height: 50px;
+  font-family: 'DS-Digital';
+  padding: 0 10px 0 0;
+  font-size: 30px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: #cbccd0;
+  text-align: right;
+  line-height: 50px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  max-width: 100%;
+}
+
+button {
+  background-color: #2e2f34;
+  color: #fff;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+button:active {
+  transform: scale(0.92);
+  border: 0.5px solid #2e2f34;
+}
+
+#clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: #bf5a89;
+}
+
+#divide {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#multiply {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#seven {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#equals {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
