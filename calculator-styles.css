@@ -1,5 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/63f874d192fb3892d88d5e26f942b5e2?family=DS-Digital);
 
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 @font-face {
   font-family: 'DS-Digital';
   src: url('//db.onlinewebfonts.com/t/63f874d192fb3892d88d5e26f942b5e2.eot');
@@ -142,4 +144,21 @@ button:active {
 #zero {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+#footer {
+  text-align: center;
+}
+
+#footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  position: relative;
+  top: 40rem;
+}
+
+#footer:visited {
+  text-decoration: none;
 }
