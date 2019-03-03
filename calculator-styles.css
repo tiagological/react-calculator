@@ -46,8 +46,8 @@ body {
     height: 30em;
   }
 
-  #footer-link {
-    top: 40rem;
+  #footer {
+    top: 50rem;
   }
 }
 
@@ -152,6 +152,8 @@ button:active {
 
 #footer {
   text-align: center;
+  position: relative;
+  top: 40rem;
 }
 
 #footer-link {
@@ -159,8 +161,6 @@ button:active {
   text-decoration: none;
   font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
-  position: relative;
-  top: 20rem;
 }
 
 #footer:visited {
