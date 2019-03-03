@@ -45,6 +45,10 @@ body {
     width: 40%;
     height: 30em;
   }
+
+  #footer-link {
+    top: 40rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -156,7 +160,7 @@ button:active {
   font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
   position: relative;
-  top: 40rem;
+  top: 20rem;
 }
 
 #footer:visited {
